@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap);
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+}
+.container {
+	margin: 0 auto;
+	padding: 125px 0 115px;
+	max-width: 1135px;
+}
+.title {
+	padding: 10px 0 15px;
+	text-align: center;
+}
+.title h2 {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+.product ul {
+	display: flex;
+	gap: 16px;
+	padding-top: 20px;
+}
+.product ul li {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: calc((100% - 48px)/4);
+}
+.product ul li a img {
+	width: 100%;
+}
+.product ul li .desc strong {
+	display: block;
+	font-size: 0.913em;
+	color: #444;
+}
+.product ul li .desc .discount {
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 0.913em;
+	font-weight: 800;
+	color: #f32d10;
+}
+.product ul li .desc .dollar {
+	display: inline-block;
+	margin-left: 2px;
+	margin-top: 15px;
+	font-size: 0.913em;
+	font-weight: 800;
+	color: #444;
+}
+.product ul li .desc .won {
+	display: block;
+	margin-top: 6px;
+	font-size: 0.913em;
+	color: #666;
+}
+.controller {
+	margin-top: 30px;
+}
+.controller ul {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+.controller ul li a {
+	display: block;
+	width: 6px;
+	height: 6px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background-color: #ccc;
+	border-radius: 3px;
+}
+.controller ul li.on a {
+	width: 20px;
+	background-color: #333;
+}

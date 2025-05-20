@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Domine&display=swap);
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+body {
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+}
+
+/* portfolio */
+#portfolio {
+	padding: 6.25em 0 4.375em;
+	background-color: #f7f7f7;
+}
+#portfolio .inner {
+	margin: 0 auto;
+	max-width: 940px;
+	text-align: center;
+}
+#portfolio .title h3 {
+	font-size: 1.875em;
+	font-weight: 600;
+}
+#portfolio .content {
+	padding-top: 40px;
+}
+#portfolio .content .tab_menu {
+	text-align: right;
+}
+#portfolio .content .tab_menu ul {
+	display: flex;
+	justify-content: flex-end;
+	gap: 5px;
+}
+#portfolio .content .tab_menu ul li a {
+	display: block;
+	padding: 0 10px;
+	line-height: 32px;
+	font-size: 0.875em;
+	background-color: transparent;
+	color: #999;
+	border: 1px solid rgba(0,0,0,.6);
+	box-sizing: border-box;
+}
+#portfolio .content .tab_menu ul li.active a {
+	background-color: rgba(0,0,0,.6);
+	color: #eee;
+	border: none;
+}
+#portfolio .content .banner {
+	padding-top: 24px;
+}
+#portfolio .content .banner ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px 20px;
+}
+#portfolio .content .banner ul li {
+	width: calc((100% - 40px)/3);
+}
+#portfolio .content .banner ul li a {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+#portfolio .content .banner ul li a::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: rgba(252,207,255,.3);
+	transition: opacity 0.3s;
+}
+#portfolio .content .banner ul li a:hover::after,
+#portfolio .content .banner ul li a:focus::after {
+	opacity: 1;
+}
+#portfolio .content .banner ul li a .photo {
+	overflow: hidden;
+}
+#portfolio .content .banner ul li a .photo img {
+	width: 100%;
+	transform: scale(1);
+	transition: transform 0.3s;
+}
+#portfolio .content .banner ul li a:hover .photo img,
+#portfolio .content .banner ul li a:focus .photo img {
+	transform: scale(1.05);
+}
+#portfolio .content .banner ul li a .desc {
+	padding: 24px 10px;
+	background-color: #fff;
+}
+#portfolio .content .banner ul li a .desc dl dt {
+	line-height: 1.75;
+	font-weight: 700;
+}
+#portfolio .content .banner ul li a .desc dl dd {
+	line-height: 1.75;
+	font-family: "Domine", serif;
+	font-size: 0.875em;
+	font-style: italic;
+	color: #838383;
+}
+#portfolio .more {
+	display: block;
+	margin-top: 40px;
+	padding: 10px 0;
+	border: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 720px) {
+	#portfolio .content .banner ul li {
+		width: calc((100% - 20px)/2);
+	}
+}
+@media only screen and (max-width: 460px) {
+	body {
+		font-size: 0.875em;
+	}
+	#portfolio .content .banner ul li {
+		width: 100%;
+	}
+}
