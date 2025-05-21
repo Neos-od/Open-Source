@@ -1,6 +1,6 @@
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=1bfc54&text=LIST&fontAlign=50&fontColor=fff" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=146027&text=LIST&fontAlign=50&fontColor=fff" />
 
 ### OPEN SOURCE 1 : 
 
@@ -22,7 +22,7 @@
 
 ### OPEN SOURCE 11 : 
 
-![footer](https://capsule-render.vercel.app/api?section=footer&type=waving&height=200&color=1bfc54)
+![footer](https://capsule-render.vercel.app/api?section=footer&type=waving&height=200&color=146027)
 </div>
 
 
